@@ -1,0 +1,18 @@
+function MyComponent({ title, children  }) {
+  return (
+    <div className="my-component">
+      <h2>{title}</h2>
+      {children}
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <MyComponent title="Teste">
+        <p>Conteúdo interno do componente MyComponent.</p>
+      </MyComponent>
+    </div>
+  );
+}
